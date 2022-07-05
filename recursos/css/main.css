@@ -32,10 +32,12 @@
 }
 
 /* new style 2022 */
-
+.td_rojo {
+  color: red !important;
+}
 .banner-event {
   position: relative;
-  padding-bottom: 9%;
+  /*   padding-bottom: 0; */
 }
 .img-barra01 {
   position: absolute;
@@ -76,11 +78,82 @@
 .logo-principal {
   position: relative;
 }
+.logo-artista img:nth-child(1) {
+  z-index: 10;
+}
+.logo-artista img:nth-child(2) {
+  z-index: 11;
+}
+.logo-artista img:nth-child(3) {
+  z-index: 12;
+}
+.logo-artista img:nth-child(4) {
+  z-index: 13;
+}
+.logo-artista img:nth-child(5) {
+  z-index: 14;
+  animation: lightEventOne 3s ease infinite;
+}
+
+@keyframes lightEventOne {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes lightEventTwo {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes lightEventThree {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.logo-artista img:nth-child(6) {
+  z-index: 15;
+  animation: lightEventThree 4s ease infinite;
+}
+.logo-artista img:nth-child(7) {
+  z-index: 16;
+  animation: lightEventTwo 3s ease infinite;
+}
+.logo-artista img:nth-child(8) {
+  z-index: 17;
+}
+.logo-artista img:nth-child(9) {
+  z-index: 18;
+}
+.logo-artista img:nth-child(10) {
+  z-index: 19;
+}
+
 .logo-prin-content {
   /* position: relative; */
 }
 .head-logo {
   text-align: center;
+}
+.head-logo img {
+  width: 70%;
 }
 .logo-prin-content img {
   position: absolute;
@@ -5664,6 +5737,9 @@ body > .jcf-select-drop.jcf-drop-flipped {
     position: absolute;
     width: 100%;
     padding-top: 45%;
+  }
+  .head-logo img {
+    width: 100%;
   }
 }
 
