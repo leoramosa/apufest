@@ -492,12 +492,12 @@ textarea {
 
 .close {
   float: right;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 700;
   line-height: 1;
   color: #fff;
   text-shadow: 0 1px 0 #fff;
-  opacity: 0.5;
+  opacity: 1;
 }
 
 .mensaje {
@@ -617,7 +617,7 @@ textarea {
   justify-content: space-between;
   padding: 1rem 1rem;
   border-bottom: 1px solid #000000;
-  background: #000;
+  background: #de1714;
   border-top-left-radius: calc(0.3rem - 1px);
   border-top-right-radius: calc(0.3rem - 1px);
 }
@@ -5765,5 +5765,12 @@ body > .jcf-select-drop.jcf-drop-flipped {
   }
   .logo-prin-content img {
     padding: 0px 20px;
+  }
+}
+
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 600px;
+    margin: 1.75rem auto;
   }
 }
